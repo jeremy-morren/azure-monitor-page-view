@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Azure.Identity" Version="1.13.2" />
+        <PackageReference Include="Microsoft.ApplicationInsights" Version="2.23.0" />
+        <PackageReference Include="System.Management" Version="9.0.2" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.2" />
+        <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.2" />
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.5.0" />
+
+        <PackageReference Include="Azure.Monitor.OpenTelemetry.Exporter" Version="1.4.0-beta.3-pageView" />
+<!--        <PackageReference Include="Azure.Monitor.OpenTelemetry.Exporter" Version="1.4.0-beta.3-postProcess" />-->
+
+<!--        <PackageReference Include="Microsoft.ApplicationInsights.WindowsServer" Version="2.22.0" />-->
+<!--        <PackageReference Include="Microsoft.ApplicationInsights.WorkerService" Version="2.22.0" />-->
+    </ItemGroup>
+
+</Project>

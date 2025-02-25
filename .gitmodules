@@ -1,0 +1,3 @@
+[submodule "azure-sdk-for-net"]
+	path = azure-sdk-for-net
+	url = https://github.com/jeremy-morren/azure-sdk-for-net.git

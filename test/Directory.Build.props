@@ -1,0 +1,16 @@
+﻿<Project>
+
+    <ItemGroup>
+        <PackageReference Include="OpenTelemetry" Version="1.11.1" />
+        <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.11.1" />
+        <PackageReference Include="OpenTelemetry.Instrumentation.Http" Version="1.11.0" />
+
+        <PackageReference Include="JeremyMorren.OpenTelemetry.Exporter.Console.Json" Version="1.9.0-rc9" />
+        <PackageReference Include="JeremyMorren.Serilog.Sinks.OpenTelemetry.Console.Json" Version="1.9.0-rc9" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Compile Include="$(MSBuildThisFileDirectory)AppInsights.cs" Visible="False"/>
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,22 @@
+﻿name: 'open-telemetry'
+
+services:
+  jaeger:
+    image: jaegertracing/all-in-one:latest
+    restart: on-failure
+    environment:
+      GOMAXPROCS: '1'
+    ports:
+      - '16686:16686/tcp' # Web UI
+      - '4317:4317/tcp' # OTLP
+    mem_limit: 500m
+    cpu_count: 1
+
+#  api:
+#    build:
+#      context: .
+#      dockerfile: Api/Dockerfile
+#    ports:
+#      - '5289:8080/tcp'
+#    environment:
+#      KUBERNETES_SERVICE_HOST: 'localhost'

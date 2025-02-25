@@ -1,0 +1,16 @@
+@ApiAddress = http://localhost:5289
+
+GET {{ApiAddress}}/api/Users
+Accept: application/json
+
+###
+
+GET {{ApiAddress}}/api/Customers
+Accept: application/json
+
+###
+
+GET {{ApiAddress}}/api/Cities
+Accept: application/json
+
+###
